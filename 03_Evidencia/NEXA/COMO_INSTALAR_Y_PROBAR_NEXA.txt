@@ -1,0 +1,74 @@
+NEXA · Beta para demo (5 de noviembre de 2026)
+================================================
+
+ARCHIVO
+-------
+NEXA_Beta_5NOV.apk
+Paquete: com.tesh.sie
+Versión: 1.0 (debug)
+Tamaño: 23,882,565 bytes
+SHA-256: 39D11242F9AE671B7B8ED93A71AD61D79B54D07ABEFF4F8616E68AFBB6371009
+
+QUÉ INCLUYE ESTA BETA
+---------------------
+- Inicio con resumen del día y accesos a todas las secciones.
+- Perfil académico: carrera, grupo y semestre (chip arriba a la derecha en Inicio).
+- Materias editables: crear, editar y eliminar (con borrado en cascada de tareas, notas, evaluaciones, temas, archivos y horario).
+- Horario editable: crear, editar y eliminar clases por día (Lunes a Sábado).
+- La app se adapta a cualquier carrera; los datos de ejemplo de 5° ISC se pueden quitar con un toque.
+- Materias, horario, tareas, notas, archivos, evaluaciones y temas.
+- Datos y accesos, plan de estudio, sueño y promedios.
+- Sincronización por código de grupo con Firestore.
+- Notificaciones de tareas y exámenes.
+- Tema visual galaxia y navegación renovada.
+- El chatbot NEXA IA queda DESHABILITADO en esta beta (se integrará después).
+
+CÓMO INSTALAR EN UN TELÉFONO ANDROID
+------------------------------------
+1. Copia NEXA_Beta_5NOV.apk al teléfono (Drive, USB o WhatsApp).
+2. Ábrelo desde el administrador de archivos.
+3. Si Android pide permitir "instalar apps desconocidas", actívalo solo para
+   la app con la que lo estás abriendo (Archivos, Drive o Chrome).
+4. Toca Instalar y luego Abrir.
+5. Acepta el permiso de notificaciones cuando aparezca.
+6. Si no aparece el permiso: Ajustes > Apps > NEXA > Notificaciones > Permitir.
+
+CÓMO INSTALAR EN EL EMULADOR DE ANDROID STUDIO
+----------------------------------------------
+1. Abre Android Studio > Device Manager y crea/inicia un emulador (API 34 o 36).
+2. Con el emulador encendido, ejecuta ABRIR_EMULADOR_Y_NEXA.bat
+   (está en esta misma carpeta; instala el APK y abre NEXA automáticamente).
+3. Si el script no encuentra el emulador, abre la app "Files" del emulador y
+   arrastra el APK a la ventana, o usa:
+   adb install -r NEXA_Beta_5NOV.apk
+
+RECORRIDO RÁPIDO PARA LA DEMO (3–5 minutos)
+-------------------------------------------
+1. Inicio: muestra "Tu semestre en órbita", pendientes de hoy/mañana y la campana.
+2. Toca el chip de perfil (arriba a la derecha): configura carrera, grupo y semestre.
+3. Toca la campana dorada: debe aparecer una notificación de prueba.
+4. Menú > Materias: abre una materia y recorre Tareas, Notas, Archivos, Eval y Temas.
+   Usa "Nueva materia" para agregar una de tu carrera. Si no quieres los datos de
+   ejemplo, toca "Quitar" en el aviso "Datos de ejemplo".
+5. Menú > Horario: cambia de día y abre una materia desde el horario.
+   Usa "Nueva clase" para agregar una clase de tu carrera; los iconos de lápiz y
+   basura editan o eliminan la clase.
+6. Menú > Tareas: crea una tarea, asígnale fecha y prioridad.
+7. Menú > Notas: crea una nota y edítala.
+8. Menú > Datos: guarda un acceso (se guarda local, sin internet).
+9. Menú > Sincronizar: escribe un código de grupo numérico y sincroniza.
+   Requiere internet. Si falla, la app ahora lo dice honestamente.
+10. Menú > Plan de estudio: marca actividades y agrega una nueva.
+11. Menú > Sueño: registra horas y calidad.
+12. Menú > Promedios: agrega una calificación y revisa el promedio.
+
+NOTAS HONESTAS PARA LA EXPOSICIÓN
+---------------------------------
+- Es una beta debug, no la versión final firmada para tienda.
+- Los datos de ejemplo se cargan solo la primera vez; puedes quitarlos desde Materias > Quitar.
+- El perfil académico y las materias se guardan localmente en el teléfono.
+- La sincronización depende de internet y de Firestore.
+- La campana de prueba demuestra el sistema de notificaciones; los recordatorios
+  reales se programan al guardar tareas/exámenes con fecha.
+- Si se prueba en un teléfono con Android 13 o superior, acepta notificaciones.
+- El chatbot no está en esta build para no depender del servidor durante la demo.

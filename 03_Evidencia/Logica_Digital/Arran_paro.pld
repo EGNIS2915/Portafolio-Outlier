@@ -1,0 +1,18 @@
+Name       Arran_paro.pld;
+Partno     01;
+Date       08/10/26;
+Revision   01;
+Designer   Piliado;
+Company    TESH-TNM;
+Assembly   ;
+Location   ;
+Device     P22V10;
+
+PIN 2 = A ;
+PIN 3 = B ;
+
+PIN 23 = MOTOR ;
+PIN 22 = MOTOR_OFF ;
+
+MOTOR = (A # MOTOR) & !B ;
+MOTOR_OFF = !MOTOR ;

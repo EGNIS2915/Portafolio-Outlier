@@ -1,0 +1,43 @@
+Name       Contador.pld;
+Partno     00;
+Date       17/09/26;
+Revision   03;
+Designer   Piliado Egnis;
+Company    TESH_TNM;
+Assembly   ;
+Location   ;
+Device     P22V10;
+
+PIN 1 = CLK;
+PIN 2 = RESET;
+
+
+PIN 14 = Q0;
+PIN 15 = Q1;
+PIN 16 = Q2;
+PIN 17 = Q3;
+
+
+NUEVE = Q3 & !Q2 & !Q1 & Q0;
+
+
+
+
+Q0.D = !RESET & !Q0;
+
+
+
+Q1.D = !RESET &
+       ((Q1 $ Q0) & !NUEVE);
+
+
+
+Q2.D = !RESET &
+       (Q2 $ (Q1 & Q0));
+
+
+
+
+Q3.D = !RESET &
+       ((!Q3 & Q2 & Q1 & Q0) #
+        (Q3 & !NUEVE));
